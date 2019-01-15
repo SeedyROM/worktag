@@ -5,10 +5,13 @@ name = "pypi"
 
 [packages]
 urwid = "*"
+docopt = "*"
 
 [dev-packages]
 pylint = "*"
 "flake8" = "*"
+"flake8-docstrings" = "*"
+pycodestyle = "*"
 
 [requires]
 python_version = "3.7"
