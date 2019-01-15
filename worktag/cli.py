@@ -10,8 +10,9 @@ class CLI:
     def __init__(self, config_path):
         """Initialize the CLI interface."""
         self.config_path = config_path
-        print(config_path)
+        print(self.config_path)
 
     def parse_arguments(self):
         """Use docopt to parse command line arguments."""
-        self.argument_parser = docopt(WORKTAG_DOCOPT, version='worktag 0.0.1')
+        self.arguments = docopt(WORKTAG_DOCOPT, version='worktag 0.0.1')
+        print(self.arguments)
